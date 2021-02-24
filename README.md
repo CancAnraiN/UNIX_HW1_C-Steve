@@ -1,33 +1,30 @@
-# UNIX_HW1_C-Steve
-In the next few programming assignments, we'll implement a text adventure game.
-It's interesting to compare text adventure games to UNIX's directory structure.
-In text games you walk between rooms containing objects you can examine & move;
-in UNIX you change between directories containing files you can examine & move.
-These games also have locked doors that you cannot get through without a key or
-combination; UNIX directories can also have permissions set to deny you access.
-Some objects can be hidden, and so can some UNIX files. So we can learn UNIX
-while having fun writing a game.
+# UNIX_HW1_C-Steve:透過寫一個text adventure game來學習UNIX's directory structure
 
-The specific text adventure game that we will be recreating is one level of
-a game called Dunnet. The main reason that I've chosen this specific game is
-that you already have it in your UNIX system, because it comes with the emacs
-text editor. (Yes, I know that that is weird, why should a text editor have a
-game built into it?) Emacs is a good option for creating text files in UNIX.
-Many programmers use it. It takes a few minutes to memorize the key codes for
-simple commands. Many of these key codes also work on the UNIX command prompt,
-so it makes sense to learn them anyway (see the last few slides of lecture #1).
+## 文本冒險遊戲(text adventure game) & UNIX目錄結構(UNIX's directory structure)的相似性:
++ **文本冒險遊戲 :**
+    + 在各個房間內移動，你可以查看跟移動物品。
+    + 有著上鎖的門，如果沒有鑰匙或道具就無法進入。
+    + 有隱藏道具。
++ **UNIX目錄結構 :**
+    + 在目錄間，你可以查看跟移動物品檔案。
+    + 可以有特殊限制，拒絕你的存取。
+    + 有隱藏文件。
+## 這次具體要做?:
+要重寫一個叫Dunnet的遊戲，因為Dunnet這個遊戲是從Emac的文字編輯器生出來的，
+裡面很多Key Code 也適用於UNIX基本命令，C+覺得這樣學UNIX很棒棒。
+### Dunnet
++ **Dunnet**是一個文字冒險遊戲，在一開始，你站在泥濘的道路的盡頭，這和普通的冒險遊戲差不多，但是，接下來，這個遊戲就會暴露出它奇怪~鬼畜~的本質。(有興趣請自行查詢)
+    + 這個遊戲存在於emac中，所以如果想要玩可以照下面的指令下載emac。
+    + 要玩這個遊戲可以打`emacs -batch -l dunnet`(下載完emac後)
+    + the dunnet game is going to be run from the UNIX command prompt, not from within the emacs screen.   
+### 下載 emac 文字編輯器
++ 指令:`sudo apt-get install emacs`
+    + To verify that you have emacs, type `emacs` .If it doesn't run, then install it.  Once emacs is running, close it by typing
+Ctrl-x, Ctrl-c. I only had you open it to test if it was installed.
+      
 
-To play the game, first verify that you have installed the emacs text editor.
-You don't want to install it to play this game -- you want it because it is
-a good word processor to use for UNIX programming. (But it also, inexplicably,
-does contain this game.) To verify that you have emacs, type (ignore the %):
-    % emacs
 
-If it doesn't run, then install it.  Once emacs is running, close it by typing
-Ctrl-x, Ctrl-c. I only had you open it to test if it was installed -- the
-dunnet game is going to be run from the UNIX command prompt, not from within
-the emacs screen. (You run it by typing: "emacs -batch -l dunnet".)
-
+## 尚未翻譯
 We will now begin discussing the current programming assignment. In this first
 assignment, you will create the directories and files that map to part of the
 Dunnet game. (In the next homework we will use aliases to create some of the
