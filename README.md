@@ -33,50 +33,19 @@
 ### savedgame
 + 用來加載我們會用到的部分(在**explanatoryWalkthrough.txt**會說要怎麼用這個檔案)
 ### PA1assignment.txt 
-+ 描述本次作業一的細節部分(請先看完 <font color=#FF6600>explanatoryWalkthrough.txt</font> )
++ 描述本次作業一的細節部分(請先看完**explanatoryWalkthrough.txt** )
 ### descriptions.txt and objects.txt
-+ 這兩個檔案有你需要放進不同檔案裡的文字敘述，怎麼做的詳細描述在**PA1assignment.txt**
-## 尚未翻譯
-
-
-The explanatoryWalkthrough.txt file explains how to play the dunnet game,
-particularly the part that we will be implementing in this homework. Read this
-walkthrough file next, after you finish reading this README file.
-
-The savedgame file is used by the dunnet game, in order to load up the part
-of the game that we'll be implementing. The explanatoryWalkthrough.txt file
-describes how to use this savedgame file.
-
-The PA1assignment.txt file describes the details of this first homework. You
-will want to read that file after you finish reading the walkthrough.
-
-The descriptions.txt and objects.txt files contain the text that you will be
-placing into various files that you need to create in this first homework. How
-you are to do this is discussed in the PA1assignment.txt file.
-
-The gradingPolicy.txt file explains the strict rules that will be employed
-in grading the homework. Most important is to know the stiff penalties for
-cheating. The course name is "UNIX System Programming"; therefore, it has the
-word "programming" in the title. This means that programming is a crucial part
-of the course. Your assignments will, in fact be worth 42% of your final grade.
-It is therefore a very serious matter to cheat on the homework. So don't cheat.
-Also, read the grading policy and know what is allowed and disallowed.
-
-The gradingPolicy.txt file also describes the strict rules involving partial
-credit. Each assignment will have a basic standard of performance. If your
-submitted file does not match the basic standard, then it will receive a 0.
-This strict rule is necessary to allow the grading to be able to be completed
-in reasonable time (and to leave the grader enough time to look for cheating).
-It explains how to use the findYourOutput.exe file to see if you match the
-basic standard.
-
-The findYourOutput.exe file is not meant to be read. It is used to create a
-listing of your output, which can be compared to the expectedOutput file.
-
-The expectedOutput file is the basic standard of performance that is expected
-for the first homework. The PA1assignment.txt file will explain how you can
-check your answer against the expected output. If you view this file you will
-see that it lists every file and directory that you will create. This listing
++ 這兩個檔案有你在這次作業裡需要放進不同檔案裡的文字敘述，怎麼做的詳細描述在**PA1assignment.txt**裡
+### gradingPolicy.txt
++ 講解評分規則，C+在課堂上講的東東 
++ 裡面還有說作業的最低基本要求，達不到也是0分
+### findYourOutput.exe
++ 它可以幫你建一個Output的list，可以跟**expectedOutput**這個檔案比較，以測試出有沒有達到最低基本要求。(要如何測試的方法在**gradingPolicy.txt**裡。)
+### expectedOutput
++ 本次作業的標準，在**PA1assignment.txt**裡有解釋要怎麼check你的答案
++ 若你點開此檔，你會看到所有你在這次作業將會建立的檔案跟目錄。
++ 這裡我看不懂也懶得翻了~累累~，放原文:
+    + This listing
 has a nice feature, that each individual directory appears in one place. What
 do I mean? Well consider the receivingRoom, it has an axe and a shovel (among
 other things). It also has a door to the east. the find command alphabetizes
@@ -85,6 +54,7 @@ not the best ordering, because it means the axe and shovel do not appear near
 each other when you type: find . -name "*".  But they do appear near each
 other in the expectedOutput file. (And in the output of findYourOutput.txt.)
 
-Now that you've finished reading this file, the next step is to proceed on to
-reading the explanatoryWalkthrough.txt file, then the PA1assignment.txt file,
-then the gradingPolicy.txt file...
+## 結尾
+C+給的**README**結束了，再來去讀(2)**explanatoryWalkthrough.txt**吧 :)
+然後(3)**PA1assignment.tx**
+再(4)**gradingPolicy.txt**
