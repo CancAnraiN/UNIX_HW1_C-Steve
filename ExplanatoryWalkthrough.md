@@ -80,14 +80,10 @@
     A shovel
     >
 ```
-
-## 尚未翻譯:
-
-From the above, we see that we start the game carrying a lamp. We also see that
-some items can be picked up (such as the shovel), but other items cannot be
-taken (such as the tree).
-If we picked up the shovel, then it should not be on the ground. And if we
-dropped the lamp, then it should be on the ground instead. Let's see:
++ 從上得知，我們開局就有一盞燈，而且也知道了有些道具是可以撿起來的(像鏟子)，有些是不行的(像樹)。 <br />
+如果我們撿起鏟子，那他就應該不在地上了;反之，如果我們把燈丟掉，那他就會出現在地上。
+如下:
+```
 
     >l
     Dead end
@@ -97,9 +93,9 @@ dropped the lamp, then it should be on the ground instead. Let's see:
     from each other.
     There is a lamp nearby.
     >
-
-Correct. The shovel is no longer there, but the lamp is. Let's move around
-some and see how things display:
+```
++ 很好，接下來到處走走看看:
+```
 
     >e
     E/W Dirt road
@@ -108,21 +104,11 @@ some and see how things display:
     Dead end
     There is a lamp nearby.
     >
-
-From the above, we see that the game remembers locations that you have already
-visited. Instead of giving a long description when you enter these locations,
-it just gives the name of the room. But we also see that it still will display
-the objects that are present (ie, the boulder, shovel, or lamp). But remember
-that there was also a tree object, and that one doesn't display. So objects
-that give messages every time you enter the room are a subset of the total
-objects in the game. And the objects that can be picked up are also a subset
-of all objects (eg, the shovel and lamp can be picked up, but the tree and the
-boulder cannot be picked up).
-
-Note that, even though only the short description is given when re-entering a
-place, the long description can still be seen by typing 'l':
-
-    >e
+```
++ 如果到過了，他只會Show出房間名稱跟還有什麼道具在這裡。<br />
+但有時你還是需要完整的敘述會比較清楚，這時可以輸入`l`:
+```
+ >e
     E/W Dirt road
     There is a large boulder here.
     >l
@@ -131,6 +117,9 @@ place, the long description can still be seen by typing 'l':
     both sides of you.  The road continues to the east and west.
     There is a large boulder here.
     >
+```
+
+## 尚未翻譯:
 
 Now that we know the game mechanics, let's start thinking about our programming
 assignment. This year we will be implementing the second level of the game. So
